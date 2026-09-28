@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Kajal 🎂</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;overflow:hidden;font-family:system-ui,sans-serif;background:#080611;color:#fff}
+#stars{position:fixed;inset:0;background:
+radial-gradient(circle at 50% 45%,rgba(255,105,180,.18),transparent 28%),
+radial-gradient(circle at 20% 20%,rgba(124,92,255,.25),transparent 25%),
+radial-gradient(circle at 80% 75%,rgba(255,184,77,.14),transparent 25%),
+#080611}
+.star{position:fixed;width:2px;height:2px;background:white;border-radius:50%;animation:twinkle 2s infinite alternate}
+.screen{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;z-index:2}
+.card{width:min(92vw,470px);min-height:650px;border-radius:35px;padding:30px 24px;text-align:center;
+background:linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,.035));
+border:1px solid rgba(255,255,255,.17);box-shadow:0 30px 100px rgba(0,0,0,.65);backdrop-filter:blur(16px);
+display:flex;flex-direction:column;align-items:center;justify-content:center}
+.intro h2{font-size:28px;font-weight:400;margin:0 0 10px}.intro p{opacity:.7;margin-bottom:28px}
+.open{border:0;border-radius:99px;padding:15px 30px;font-size:16px;color:white;background:linear-gradient(135deg,#ff4f9a,#8a63ff);box-shadow:0 12px 30px rgba(255,79,154,.25);cursor:pointer}
+.hidden{display:none}
+.badge{font-size:11px;letter-spacing:4px;text-transform:uppercase;opacity:.65}
+h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(42px,12vw,65px);line-height:.95;margin:12px 0;
+background:linear-gradient(90deg,#ffd0e5,#fff,#d9c8ff,#ffd0e5);background-size:300%;-webkit-background-clip:text;color:transparent;animation:shine 4s linear infinite}
+.name{font-family:cursive;font-size:34px;color:#ffd1e7;margin-top:-2px}.from{margin-top:24px;font-family:Georgia,serif;font-size:18px;color:#eee}
+.msg{max-width:350px;line-height:1.65;opacity:.82;font-size:14px;margin:10px auto 0}
+.cake{position:relative;width:230px;height:230px;margin:5px auto 5px}
+.plate{position:absolute;bottom:20px;left:10px;width:210px;height:20px;border-radius:50%;background:#d9c4df55;box-shadow:0 5px 20px #ff8ac833}
+.bottom{position:absolute;bottom:31px;left:35px;width:160px;height:72px;border-radius:13px 13px 25px 25px;background:linear-gradient(#e89bbd,#9f5d91);box-shadow:inset 0 -12px 18px #6e3e70}
+.top{position:absolute;bottom:85px;left:53px;width:124px;height:50px;border-radius:14px 14px 20px 20px;background:linear-gradient(#f5c9dd,#cf88b2)}
+.cream{position:absolute;bottom:116px;left:53px;width:124px;height:25px;border-radius:50%;background:#fff8fc}
+.drip{position:absolute;bottom:96px;left:67px;width:9px;height:29px;border-radius:0 0 9px 9px;background:#fff8fc;box-shadow:27px 5px #fff8fc,54px -2px #fff8fc,81px 4px #fff8fc}
+.candle{position:absolute;bottom:138px;left:108px;width:13px;height:46px;border-radius:6px;background:repeating-linear-gradient(45deg,#fff 0 6px,#ff86b4 6px 12px);z-index:3}
+.flame{position:absolute;bottom:179px;left:105px;width:20px;height:28px;border-radius:60% 40% 60% 40%;background:#ffd45e;transform:rotate(45deg);box-shadow:0 0 30px 10px #ffbb5533;animation:flicker .55s infinite alternate;z-index:4}
+.flame.out{opacity:0;animation:none}
+.smoke{position:absolute;bottom:182px;left:109px;width:14px;height:45px;opacity:0;border-radius:50%;filter:blur(4px);background:linear-gradient(transparent,#bbb);transform:translateY(0)}
+.smoke.on{opacity:.35;animation:smoke 2.2s ease-out forwards}
+.blow{margin:10px 0 18px;border:1px solid #ffffff2c;border-radius:99px;padding:11px 22px;background:#ffffff12;color:#fff;cursor:pointer}
+.blow.disabled{opacity:.45;pointer-events:none}
+.burst{position:fixed;inset:0;pointer-events:none;z-index:8}
+.conf{position:absolute;top:-20px;width:8px;height:14px;animation:fall 4s linear forwards}
+.balloon{position:fixed;bottom:-100px;width:45px;height:58px;border-radius:50%;opacity:.35;animation:rise 11s linear infinite}
+.balloon:after{content:"";position:absolute;top:56px;left:22px;width:1px;height:80px;background:#ffffff55}
+.b1{left:5%;background:#ff5f9e}.b2{left:25%;background:#8d75ff;animation-delay:3s}.b3{right:22%;background:#ffd15c;animation-delay:6s}.b4{right:4%;background:#5fe0c1;animation-delay:1s}
+.final{animation:pop .9s cubic-bezier(.2,1.5,.4,1)}
+.final .heart{font-size:25px;animation:beat 1s infinite}.final p{font-size:15px;line-height:1.7;opacity:.85}
+@keyframes shine{to{background-position:300%}}@keyframes flicker{to{transform:rotate(45deg) scale(1.16);filter:brightness(1.25)}}
+@keyframes smoke{to{transform:translate(18px,-45px) scale(1.8);opacity:0}}
+@keyframes twinkle{to{opacity:.15;transform:scale(.5)}}@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+@keyframes rise{to{transform:translateY(-120vh) rotate(12deg)}}@keyframes pop{from{opacity:0;transform:scale(.75)}to{opacity:1;transform:scale(1)}}
+@keyframes beat{50%{transform:scale(1.25)}}
+</style>
+</head>
+<body>
+<div id="stars"></div>
+<div class="balloon b1"></div><div class="balloon b2"></div><div class="balloon b3"></div><div class="balloon b4"></div>
+
+<div class="screen">
+<div class="card">
+  <div id="intro">
+    <div style="font-size:55px">🎁</div>
+    <h2>A little surprise...</h2>
+    <p>Someone has prepared something special for you ✨</p>
+    <button class="open" onclick="openCard()">Open it 💫</button>
+  </div>
+
+  <div id="birthday" class="hidden">
+    <div class="badge">today is your special day</div>
+    <h1>Happy Birthday</h1>
+    <div class="name">Kajal ✨</div>
+    <div class="cake">
+      <div class="smoke" id="smoke"></div><div class="flame" id="flame"></div><div class="candle"></div>
+      <div class="cream"></div><div class="drip"></div><div class="top"></div><div class="bottom"></div><div class="plate"></div>
+    </div>
+    <button class="blow" id="blow" onclick="blowCandle()">🌬️ Blow the candle</button>
+    <div class="msg">Make a wish... and then let the celebration begin. 🎂</div>
+  </div>
+
+  <div id="final" class="hidden final">
+    <div style="font-size:72px">🎉</div>
+    <div class="badge">wish made ✨</div>
+    <h1>Happy Birthday</h1>
+    <div class="name">Kajal ❤️</div>
+    <div class="line"></div>
+    <p>May your smile stay this beautiful,<br>may your days be full of happiness,<br>and may this year bring you countless good memories. 🌷</p>
+    <div class="from">— From Pawan ♡</div>
+    <div class="heart" style="margin-top:25px">✨ 🎂 ✨</div>
+  </div>
+</div>
+</div>
+
+<div class="burst" id="burst"></div>
+<script>
+for(let i=0;i<55;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=Math.random()*2+'s';document.getElementById('stars').appendChild(s)}
+function openCard(){document.getElementById('intro').classList.add('hidden');document.getElementById('birthday').classList.remove('hidden')}
+function blowCandle(){
+ document.getElementById('flame').classList.add('out');document.getElementById('smoke').classList.add('on');
+ document.getElementById('blow').classList.add('disabled');document.getElementById('blow').textContent='✨ Wish made!';
+ setTimeout(()=>{document.getElementById('birthday').classList.add('hidden');document.getElementById('final').classList.remove('hidden');confetti()},900)
+}
+function confetti(){for(let i=0;i<120;i++){let c=document.createElement('i');c.className='conf';c.style.left=Math.random()*100+'vw';c.style.animationDelay=Math.random()*1.2+'s';c.style.animationDuration=3+Math.random()*2+'s';c.style.background=`hsl(${Math.random()*360},85%,70%)`;document.getElementById('burst').appendChild(c);setTimeout(()=>c.remove(),6000)}}
+</script>
+</body>
+</html>
